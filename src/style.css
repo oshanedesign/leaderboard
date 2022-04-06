@@ -1,0 +1,37 @@
+/* main container for all sections  */
+.main-container {
+  display: flex;
+  margin: auto;
+}
+
+/* Add recent score section  */
+.recent-scores-main-heading {
+  display: flex;
+  margin-left: 40px;
+}
+
+.recent-scores-refresh-button {
+  margin-left: 20px;
+  border: 2px solid black;
+  max-height: 20px;
+  margin-top: 22px;
+}
+
+/* Add your score section  */
+.add-your-scores-container {
+  margin-left: 40px;
+}
+
+.add-score-input-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.add-score-input-text {
+  margin-bottom: 20px;
+}
+
+.add-score-button {
+  float: right;
+}
