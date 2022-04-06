@@ -4,9 +4,12 @@
   margin: auto;
 }
 
-/* Add recent score section  */
+/*..........List of score section........... */
 .recent-scores-main-heading {
   display: flex;
+}
+
+.recent-scores-container {
   margin-left: 40px;
 }
 
@@ -17,7 +20,25 @@
   margin-top: 22px;
 }
 
-/* Add your score section  */
+.list-of-scores-container li {
+  margin-left: -40px;
+  background: #ddd;
+  padding: 5px;
+}
+
+.list-of-scores-container li:nth-child(odd) {
+  background: #fff;
+}
+
+.list-of-scores-container {
+  border: 2px solid black;
+}
+
+.output-list-score-style {
+  list-style: none;
+  margin-left: 10px;
+}
+/*.........Add your score section..........*/
 .add-your-scores-container {
   margin-left: 40px;
 }
@@ -34,15 +55,4 @@
 
 #add-score-button {
   float: right;
-}
-
-
-/* List of scores  */
-.list-of-scores-container {
-  border: 2px solid black;
-}
-
-.output-list-score-style {
-  list-style: none;
-  margin-left: 10px;
 }
