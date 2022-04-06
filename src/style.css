@@ -32,6 +32,17 @@
   margin-bottom: 20px;
 }
 
-.add-score-button {
+#add-score-button {
   float: right;
+}
+
+
+/* List of scores  */
+.list-of-scores-container {
+  border: 2px solid black;
+}
+
+.output-list-score-style {
+  list-style: none;
+  margin-left: 10px;
 }
