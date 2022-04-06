@@ -4,7 +4,7 @@
   margin: auto;
 }
 
-/*..........List of score section........... */
+/* ..........List of score section........... */
 .recent-scores-main-heading {
   display: flex;
 }
@@ -38,7 +38,8 @@
   list-style: none;
   margin-left: 10px;
 }
-/*.........Add your score section..........*/
+
+/* .........Add your score section.......... */
 .add-your-scores-container {
   margin-left: 40px;
 }
