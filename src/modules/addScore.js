@@ -6,7 +6,7 @@ const outputHTML = document.querySelector('#output-list-score');
 const addScore = () => {
   const listResult = document.createElement('li');
   listResult.classList = 'output-list-score-style';
-  listResult.textContent = `${input1.value}: + ${input2.value}`;
+  listResult.textContent = `${input1.value}: ${input2.value}`;
   outputHTML.appendChild(listResult);
 };
 
