@@ -3,7 +3,7 @@ const input2 = document.querySelector('#score');
 const addBtn = document.querySelector('#add-score-button');
 const outputHTML = document.querySelector('#output-list-score');
 
-let addScore = () => {
+const addScore = () => {
   const listResult = document.createElement('li');
   listResult.classList = 'output-list-score-style';
   listResult.textContent = `${input1.value}: ${input2.value}`;
@@ -14,36 +14,36 @@ addBtn.addEventListener('click', addScore);
 
 export default addScore;
 
-//get the game ID
+// get the game ID
 async function newGame() {
-  const requestURL ='https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
+  const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
   const request = new Request(requestURL);
   const response = await fetch(request, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json'},
-      body: JSON.stringify({ name: 'New Game'}),
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name: 'New Game' }),
   });
   const data = await response.json();
   return data;
 }
 newGame();
 
-//create the user score
-let newAddScore = async (user, score) => {
+// create the user score
+const newAddScore = async (user, score) => {
   const response = await fetch(`${requestURL}/${id}/scores/`, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json'},
+    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      user, 
+      user,
       score: Number(score),
-    })
-  })
+    }),
+  });
   const res = await response.json();
   return res;
 };
 
-//retrieve the user scores
+// retrieve the user scores
 const retrieveScores = async () => {
   const response = await fetch(`${requestURL}/${id}/scores/`);
   const listScores = await response.json();
-}
+};
