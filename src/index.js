@@ -1,5 +1,2 @@
 import './style.css';
-import './modules/LeaderboardAPI.js';
-
-
-newGame();
+// import * as API from './modules/LeaderboardAPI.js';
