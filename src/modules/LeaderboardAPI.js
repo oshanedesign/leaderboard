@@ -13,7 +13,7 @@
 // addBtn.addEventListener('click', addScore);
 
 const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
-const id = '7OLy4zgH9STKRFsheQOF';
+const id = 'qJxyKZ7ICvNrksOTbSig';
 
 // get the game ID
 const newGame = async () => {
@@ -25,7 +25,7 @@ const newGame = async () => {
   const data = await response.json();
   return data;
 }
-
+newGame();
 // create the user score
 const newAddScore = async (user, score) => {
   const response = await fetch(`${requestURL}/${id}/scores/`, {
