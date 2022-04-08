@@ -12,7 +12,10 @@ const addScore = () => {
 
 addBtn.addEventListener('click', addScore);
 
-export default addScore;
+
+const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
+const id = '7OLy4zgH9STKRFsheQOF';
+
 
 // get the game ID
 async function newGame() {
@@ -26,7 +29,6 @@ async function newGame() {
   const data = await response.json();
   return data;
 }
-newGame();
 
 // create the user score
 const newAddScore = async (user, score) => {
@@ -46,4 +48,24 @@ const newAddScore = async (user, score) => {
 const retrieveScores = async () => {
   const response = await fetch(`${requestURL}/${id}/scores/`);
   const listScores = await response.json();
+  return listScores;
 };
+
+const showScores = async (userData) => {
+  const scoresDisplay = document.querySelector('.scores-list');
+
+  userData = await retrieveScores();
+  const sortedData = userData.result.sort((a, b) => b.score - a.score);
+  scoresDisplay.innerHTML = '';
+  sortedData.forEach(element => {
+    const score = `
+    <div>
+    <p>${element.user}:<span>${element.score}</span></p>
+    </div>
+    `
+  });
+}
+
+
+
+export { newGame, newAddScore, showScores };
