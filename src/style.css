@@ -2,6 +2,13 @@
 .main-container {
   display: flex;
   margin: auto;
+  color: peachpuff;
+  background-color: royalblue;
+}
+
+#main-text {
+  color: royalblue;
+  background-color: peachpuff;
 }
 
 /* ..........List of score section........... */
@@ -60,4 +67,8 @@
 
 #output-list-score {
   margin-left: -30px;
+}
+
+.space {
+  margin-left: 10px;
 }

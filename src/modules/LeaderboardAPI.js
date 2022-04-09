@@ -42,7 +42,7 @@ const showScores = async (userData) => {
   sortedData.forEach((element) => {
     const score = `
     <div>
-    <p>${element.user}:<span>${element.score}</span></p>
+    <p>${element.user}:<span class="space">${element.score}</span></p>
     </div>
     `;
     scoresDisplay.innerHTML += score;
