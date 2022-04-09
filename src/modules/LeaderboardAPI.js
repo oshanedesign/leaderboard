@@ -1,4 +1,3 @@
-
 const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
 const id = 'qJxyKZ7ICvNrksOTbSig';
 
@@ -11,7 +10,7 @@ const newGame = async () => {
   });
   const data = await response.json();
   return data;
-}
+};
 
 // create the user score
 const newAddScore = async (user, score) => {
