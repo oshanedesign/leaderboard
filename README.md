@@ -12,7 +12,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://oshanedesign.github.io/leaderboard/)
+[Live Demo Link](https://jocular-twilight-7ba045.netlify.app/)
 
 
 ## Getting Started
