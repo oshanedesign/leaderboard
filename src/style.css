@@ -1,4 +1,12 @@
 /* main container for all sections  */
+body {
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  margin: 0;
+  font-family: cursive;
+  display: flex;
+  justify-content: center;
+}
+
 .main-container {
   display: flex;
   margin: auto;
@@ -21,9 +29,11 @@
 }
 
 .list-of-scores-container li {
-  margin-left: -40px;
+  margin-left: -10px;
   background: #ddd;
   padding: 5px;
+  list-style: none;
+  font-weight: bolder;
 }
 
 .list-of-scores-container li:nth-child(odd) {
@@ -56,4 +66,12 @@
 
 #add-score-button {
   float: right;
+}
+
+#output-list-score {
+  margin-left: -30px;
+}
+
+.space {
+  margin-left: 10px;
 }
